@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UFC Ticket Menu</title>
+    <style>
+        /* Base Styles */
+        body {
+            background-color: #000; /* Black background */
+            color: white;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        /* Container for the Menu */
+        .booking-menu {
+            width: 90%;
+            max-width: 500px;
+            background-color: #000;
+            padding: 20px;
+        }
+
+        /* Red Accent Title */
+        .menu-title {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-left: 4px solid #d20a0a; /* Red UFC accent line */
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Ticket Rows */
+        .ticket-row {
+            background-color: #111; /* Slightly lighter black/grey */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            margin-bottom: 15px;
+            border: 1px solid #222;
+            border-radius: 12px; /* Rounded corners */
+            transition: all 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .ticket-row:hover {
+            border-color: #d20a0a;
+            transform: translateY(-2px);
+            background-color: #161616;
+        }
+
+        /* Text Details */
+        .tier-label {
+            display: block;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .perks {
+            display: block;
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        /* Price and Button Area */
+        .price-action {
+            text-align: right;
+        }
+
+        .price {
+            display: block;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        /* Red Outline Button */
+        .select-btn {
+            background-color: transparent;
+            color: #d20a0a;
+            border: 1px solid #d20a0a;
+            padding: 8px 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .select-btn:hover {
+            background-color: #d20a0a;
+            color: #fff;
+            box-shadow: 0 0 10px rgba(210, 10, 10, 0.4);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="booking-menu">
+        <h2 class="menu-title">Select Tickets</h2>
+        
+        <div class="ticket-row">
+            <div class="tier-details">
+                <span class="tier-label">RINGSIDE - P1</span>
+                <span class="perks">VIP Lounge & Octagon Side</span>
+            </div>
+            <div class="price-action">
+                <span class="price">$1,250</span>
+                <button class="select-btn">Select</button>
+            </div>
+        </div>
+
+        <div class="ticket-row">
+            <div class="tier-details">
+                <span class="tier-label">LOWER BOWL - P2</span>
+                <span class="perks">Mid-level Visibility</span>
+            </div>
+            <div class="price-action">
+                <span class="price">$450</span>
+                <button class="select-btn">Select</button>
+            </div>
+        </div>
+
+        <div class="ticket-row">
+            <div class="tier-details">
+                <span class="tier-label">UPPER BOWL - P3</span>
+                <span class="perks">Standard Seating</span>
+            </div>
+            <div class="price-action">
+                <span class="price">$150</span>
+                <button class="select-btn">Select</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
